@@ -4,33 +4,47 @@
   --scissors: #cc0066;
 }
 
+h1{
+  position: relative;
+  left: 40%;
+}
+
 .rpsBox{
   position: absolute;
   border-style: solid;
   border-width: 6px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   bottom: 5%;
-  left: 25%;
+  left: 41%;
 }
 
 .box{
   position: absolute;
   border-style: solid;
   border-width: 6px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
+  left: 10%;
 }
 
 .box2{
   position: absolute;
   border-style: solid;
   border-width: 6px;
-  height: 300px;
-  width: 300px;
-  left: 25%;
+  height: 250px;
+  width: 250px;
+  left: 41%;
 }
 
+.box3{
+  position: absolute;
+  border-style: solid;
+  border-width: 6px;
+  height: 250px;
+  width: 250px;
+  right: 15%;
+}
 
 .rockhand {
   background-color: var(--rock);
@@ -40,66 +54,52 @@
 }
 
 .rockPinkyFinger {
-  width: 55px;
-  height: 100px;
-  left: 5%;
+  width: 15%;
+  height: 25%;
+  left: 10%;
   top: 20%;
-  border-radius: 20% 20% 20% 20%;
   z-index: 2;
 }
 
 .rockRingFinger {
-  width: 55px;
-  height: 110px;
+  width: 15%;
+  height: 30%;
   top: 20%;
-  left: 26%;
-  border-radius: 20% 20% 20% 20%;
+  left: 29%;
   z-index: 2;
 }
 
 .rockMiddleFinger {
-  width: 55px;
-  height: 100px;
+  width: 15%;
+  height: 30%;
   top: 20%;
-  left: 47%;
-  border-radius: 20% 20% 10% 10%;
+  right: 34%;
   z-index: 2;
 }
 
 .rockPointerFinger {
-  width: 55px;
-  height: 95px;
+  width: 15%;
+  height: 30%;
   top: 20%;
-  left: 68%;
-  border-radius: 20% 20% 10% 10%;
+  right: 14%;
   z-index: 2;
 }
 
 .rockThumb {
-  width: 110px;
-  height: 55px;
-  top: 38.2%;
-  left: 49.5%;
-  border-radius: 40% 20% 20% 40%;
+  width: 35%;
+  height: 15%;
+  top: 40%;
+  right: 14%;
   z-index: 2;
 }
 
 .rockPalm {
-  width: 244px;
-  height: 200px;
+  width: 73.5%;
+  height: 50%;
   top: 25%;
-  left: 5%;
-  border-radius: 10% 10% 50% 50%;
-  z-index: 1;
-}
-
-.rockWrist {
-  width: 140px;
-  height: 50px;
-  top: 50%;
-  left: 16%;
+  left: 10%;
   border-radius: 0% 0% 10% 10%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .paper {
@@ -109,47 +109,104 @@
 }
 
 .paperPinkyFinger {
-  width: 40px;
-  height: 70px;
-  left: 10%;
+  width: 10%;
+  height: 20%;
+  left: 15%;
   top: 23.4%;
 }
 
 .paperRingFinger {
-  width: 40px;
-  height: 90px;
-  left: 25%;
-  top: 16.7%;
+  width: 10%;
+  height: 25%;
+  left: 30%;
+  top: 18%;
 }
 
 .paperMiddleFinger {
-  width: 40px;
-  height: 100px;
-  left: 40%;
+  width: 10%;
+  height: 30%;
+  left: 45%;
   top: 13.4%;
 }
 
 .paperPointerFinger {
-  width: 40px;
-  height: 85px;
-  left: 55%;
+  width: 10%;
+  height: 25%;
+  left: 60%;
   top: 18.4%;
 }
 
 .paperPalm {
-  width: 175px;
-  height: 90px;
-  left: 10%;
+  width: 55%;
+  height: 30%;
+  left: 15%;
   top: 48%;
   border-radius: 0% 0% 10% 10%;
 }
 
 .paperThumb {
-  width: 40px;
-  height: 70px;
-  right: 17%;
+  width: 10%;
+  height: 20%;
+  right: 14%;
   top: 50%;
   border-radius: 0% 0% 60% 0%;
+}
+
+.scissors {
+  position: absolute;
+  background-color: var(--scissors);
+  border-style: solid;
+  borderwidth: 3%;
+}
+
+.scissorsPinkyFinger{
+  width: 10%;
+  height: 20%;
+  top: 40%;
+  left: 20%;
+  z-index: 2;
+}
+
+.scissorsRingFinger{
+  width: 10%;
+  height: 25%;
+  top: 35%;
+  left: 34%;
+  z-index: 2;
+}
+
+.scissorsThumb{
+  width: 20%;
+  height: 10%;
+  bottom: 30%;
+  right: 30%;
+  z-index: 2;
+}
+
+.scissorsMiddleFinger{
+  width: 10%;
+  height: 35%;
+  right: 39.5%;
+  top: 19%;
+  z-index: 2;
+}
+
+.scissorsPointerFinger{
+  width: 10%;
+  height: 30%;
+  right: 22%;
+  top: 24%;
+  transform: rotate(15deg);
+  z-index: 2;
+}
+
+.scissorsPalm{
+  width: 45%;
+  height: 20%;
+  bottom: 14%;
+  left: 20%;
+  border-radius: 0% 0% 10% 10%;
+  z-index: 1;
 }
 
 .button {
