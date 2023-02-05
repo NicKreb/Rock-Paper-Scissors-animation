@@ -4,6 +4,16 @@
   --scissors: #cc0066;
 }
 
+.rpsBox{
+  position: absolute;
+  border-style: solid;
+  border-width: 6px;
+  height: 300px;
+  width: 300px;
+  bottom: 5%;
+  left: 25%;
+}
+
 .box{
   position: absolute;
   border-style: solid;
@@ -11,6 +21,16 @@
   height: 300px;
   width: 300px;
 }
+
+.box2{
+  position: absolute;
+  border-style: solid;
+  border-width: 6px;
+  height: 300px;
+  width: 300px;
+  left: 25%;
+}
+
 
 .rockhand {
   background-color: var(--rock);
@@ -82,15 +102,6 @@
   z-index: 0;
 }
 
-.box2{
-  position: absolute;
-  border-style: solid;
-  border-width: 6px;
-  height: 300px;
-  width: 300px;
-  left: 25%;
-}
-
 .paper {
   background-color: var(--paper);
   position: absolute;
@@ -139,4 +150,9 @@
   right: 17%;
   top: 50%;
   border-radius: 0% 0% 60% 0%;
+}
+
+.button {
+  position: absolute;
+  bottom: 10%;
 }
