@@ -9,41 +9,54 @@ h1{
   left: 40%;
 }
 
+.gridLayout{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+}
+
 .rpsBox{
-  position: absolute;
+  position: relative;
   border-style: solid;
+  row: 2;
+  column: 2;
   border-width: 6px;
-  height: 250px;
-  width: 250px;
-  bottom: 5%;
-  left: 41%;
+  height: 220%;
+  width: 80%;
 }
 
 .box{
-  position: absolute;
+  position: relative;
   border-style: solid;
+  display: box;
+  row: 1;
+  column: 1;
   border-width: 6px;
-  height: 250px;
-  width: 250px;
-  left: 10%;
+  height: 220%;
+  width: 80%;
 }
 
 .box2{
-  position: absolute;
+  position: relative;
   border-style: solid;
+  display: box;
+  row: 1;
+  column: 2;
   border-width: 6px;
-  height: 250px;
-  width: 250px;
-  left: 41%;
+  height: 220%;
+  width: 80%;
 }
 
 .box3{
-  position: absolute;
+  position: relative;
   border-style: solid;
+  display: box;
+  row: 1;
+  column: 3;
   border-width: 6px;
-  height: 250px;
-  width: 250px;
-  right: 15%;
+  height: 220%;
+  width: 80%;
 }
 
 .rockhand {
