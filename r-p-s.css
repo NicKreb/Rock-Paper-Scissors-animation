@@ -10,8 +10,10 @@ h1{
 }
 
 .gridLayout{
- column-count: 3;
- row-count: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
 }
 
 .rpsBox{
