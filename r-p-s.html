@@ -12,41 +12,7 @@
 <h1 id="pageTitle">Rock - Paper - Scissors!</h1>
 
 <div class="container">
-<div class="box" id="rock">
-  <div class="rock">
-    <div class="rockhand rockPointerFinger"></div>
-    <div class="rockhand rockMiddleFinger"></div>
-    <div class="rockhand rockRingFinger"></div>
-    <div class="rockhand rockPinkyFinger"></div>
-    <div class="rockhand rockThumb"></div>
-    <div class="rockhand rockPalm"></div>
-  </div>
-  
-  <div class="scissors scissorsPointerFinger"></div>
-    <div class="scissors scissorsMiddleFinger"></div>
-    <div class="scissors scissorsRingFinger"></div>
-    <div class="scissors scissorsPinkyFinger"></div>
-    <div class="scissors scissorsThumb"></div>
-    <div class="scissors scissorsPalm"></div>
-  
-   <div class="paper paperPointerFinger">
-      <div class="paperPointBackground"></div>
-    </div>
-    <div class="paper paperMiddleFinger">
-      <div class="paperMidBackground"></div>
-    </div>
-    <div class="paper paperRingFinger">
-      <div class="paperRingBackground"></div>
-    </div>
-    <div class="paper paperPinkyFinger">
-      <div class="paperPinkyBackground"></div>
-    </div>
-    <div class="paper paperThumb">
-      <div class="paperThumbBackground"></div>
-    </div>
-    <div class="paper paperPalm">
-      <div class="paperPalmBackground"></div>
-    </div>
+<div class="box" id="box">
   
 </div>
 
@@ -55,7 +21,21 @@
   
 <button class="button" id="Shoot">RPS Shoot!</button>
 </div>
-  <script src="script.js"></script>
+  <script>
+    function onClick(document.getElementById('Shoot')){
+  for (let i = Math.random()) { 
+    
+  var rpsArr = [
+      "<div class='rock'><div class='rockhand rockPointerFinger'></div><div class='rockhand rockMiddleFinger'></div><div class='rockhand rockRingFinger'></div><div class='rockhand rockPinkyFinger'></div><div class='rockhand rockThumb'></div><div class='rockhand rockPalm'></div></div>",
+      '<div class="scissors scissorsPointerFinger"></div><div class="scissors scissorsMiddleFinger"></div><div class="scissors scissorsRingFinger"></div><div class="scissors scissorsPinkyFinger"></div><div class="scissors scissorsThumb"></div><div class="scissors scissorsPalm"></div>', 
+      '<div class="paper paperPointerFinger"> <div class="paperPointBackground"></div></div><div class="paper paperMiddleFinger"><div class="paperMidBackground"></div></div><div class="paper paperRingFinger"><div class="paperRingBackground"></div></div><div class="paper paperPinkyFinger"><div class="paperPinkyBackground"></div></div> <div class="paper paperThumb"><div class="paperThumbBackground"></div></div><div class="paper paperPalm"><div class="paperPalmBackground"></div></div>'
+    ]; 
+    
+    var rpsBox = document.getElementById("box");
+    return rpsBox.innerHTML + rpsArr[i];
+  };
+}
+</script>
 </body>
 
 </html>
