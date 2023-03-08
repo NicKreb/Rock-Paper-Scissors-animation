@@ -15,6 +15,10 @@ body{
 h1{
   position: relative;
   left: 40%;
+  -webkit-text-stroke: 2px White;
+  font-family: impact;
+  color: black;
+  font-size: 40px;
 }
 
 .box{
@@ -195,4 +199,11 @@ h1{
 .button {
   position: absolute;
   bottom: 10%;
+  height: 60px;
+  width: 120px;
+  border: solid 6px white;
+  background: Black;
+  color: White;
+  font-family: impact;
+  font-size: 16px;
 }
