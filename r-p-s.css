@@ -4,59 +4,29 @@
   --scissors: #cc0066;
 }
 
+body{
+  color: #fff;
+    background: -webkit-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
+    background: -o-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
+    background: -moz-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
+    background: linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
+}
+
 h1{
   position: relative;
   left: 40%;
-}
-
-.gridLayout{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  grid-auto-rows: 100px;
-}
-
-.rpsBox{
-  position: relative;
-  border-style: solid;
-  row: 2;
-  column: 2;
-  border-width: 6px;
-  height: 220%;
-  width: 80%;
 }
 
 .box{
   position: relative;
   border-style: solid;
   display: box;
+  left: 37% ;
   row: 1;
   column: 1;
   border-width: 6px;
-  height: 220%;
-  width: 80%;
-}
-
-.box2{
-  position: relative;
-  border-style: solid;
-  display: box;
-  row: 1;
-  column: 2;
-  border-width: 6px;
-  height: 220%;
-  width: 80%;
-}
-
-.box3{
-  position: relative;
-  border-style: solid;
-  display: box;
-  row: 1;
-  column: 3;
-  border-width: 6px;
-  height: 220%;
-  width: 80%;
+  height: 70vh;
+  width: 25vw;
 }
 
 .rockhand {
