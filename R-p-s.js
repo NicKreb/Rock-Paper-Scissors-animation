@@ -12,3 +12,7 @@ results = ;
 return results
 }
 }; */
+
+document.getElementById("Shoot") {
+  
+}
