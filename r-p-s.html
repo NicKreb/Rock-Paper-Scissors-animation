@@ -9,15 +9,10 @@
 </head>
 
 <body>
-  <style>
-    h1 {
-      text-align: center;
-    }
-  </style>
-  <h1 id="pageTitle">Rock - Paper - Scissors!</h1>
-  <div></div>
+<h1 id="pageTitle">Rock - Paper - Scissors!</h1>
 
-  <div class="box" id="rock">
+<div class="container">
+<div class="box" id="rock">
   <div class="rock">
     <div class="rockhand rockPointerFinger"></div>
     <div class="rockhand rockMiddleFinger"></div>
@@ -26,10 +21,15 @@
     <div class="rockhand rockThumb"></div>
     <div class="rockhand rockPalm"></div>
   </div>
-</div>
   
- <div class="box2" id="paper">
-    <div class="paper paperPointerFinger">
+  <div class="scissors scissorsPointerFinger"></div>
+    <div class="scissors scissorsMiddleFinger"></div>
+    <div class="scissors scissorsRingFinger"></div>
+    <div class="scissors scissorsPinkyFinger"></div>
+    <div class="scissors scissorsThumb"></div>
+    <div class="scissors scissorsPalm"></div>
+  
+   <div class="paper paperPointerFinger">
       <div class="paperPointBackground"></div>
     </div>
     <div class="paper paperMiddleFinger">
@@ -47,19 +47,14 @@
     <div class="paper paperPalm">
       <div class="paperPalmBackground"></div>
     </div>
-  </div>
   
-  <div class="box3" id="scissors">
-    <div class="scissors scissorsPointerFinger"></div>
-    <div class="scissors scissorsMiddleFinger"></div>
-    <div class="scissors scissorsRingFinger"></div>
-    <div class="scissors scissorsPinkyFinger"></div>
-    <div class="scissors scissorsThumb"></div>
-    <div class="scissors scissorsPalm"></div>
-  </div>
+</div>
 
-  <div class="rpsBox"></div>
-  <button class="button">RPS Shoot!</button>
+ <div class="rpsBox"></div>
+ <span></span>
+  
+<button class="button" id="Shoot">RPS Shoot!</button>
+</div>
   <script src="script.js"></script>
 </body>
 
