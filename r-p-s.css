@@ -2,20 +2,21 @@
   --rock: #cc2900;
   --paper: #3333cc;
   --scissors: #cc0066;
+  --rockBG: #AC2300;
+  --paperBG: #2E2EB8;
+  --scissorsBG: #B8005C;
 }
 
-body{
+html{
+  height: 100%;
   color: #fff;
-    background: -webkit-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
-    background: -o-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
-    background: -moz-linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
-    background: linear-gradient(110deg, var(--rock) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paper) 66%, var(--scissors) 66%);
+    background: linear-gradient(110deg, var(--rockBG) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, var(--paperBG) 66%, var(--scissorsBG) 66%);
 }
 
 h1{
   position: relative;
-  left: 40%;
-  -webkit-text-stroke: 2px White;
+  left: 39%;
+   -webkit-text-stroke: 2px White;
   font-family: impact;
   color: black;
   font-size: 40px;
@@ -33,172 +34,44 @@ h1{
   width: 25vw;
 }
 
-.rockhand {
-  background-color: var(--rock);
-  position: absolute;
-  border: black;
-  border-style: solid;
+#rock {
+  position: relative;
+  font-size: 50vh;
+  left: 14%;
+  top: 10%;
 }
 
-.rockPinkyFinger {
-  width: 15%;
-  height: 25%;
-  left: 10%;
-  top: 20%;
-  z-index: 2;
+#paper {
+  position: relative;
+  font-size: 50vh;
+  left: 14%;
+  top: 5%;
 }
 
-.rockRingFinger {
-  width: 15%;
-  height: 30%;
-  top: 20%;
-  left: 29%;
-  z-index: 2;
+#scissors {
+  position: relative;
+  font-size: 50vh;
+  left: 14%;
+  top: 5%;
 }
 
-.rockMiddleFinger {
-  width: 15%;
-  height: 30%;
-  top: 20%;
-  right: 34%;
-  z-index: 2;
+#progressBar{
+  margin-top: 5px;
+  width: 100px;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.rockPointerFinger {
-  width: 15%;
-  height: 30%;
-  top: 20%;
-  right: 14%;
-  z-index: 2;
-}
-
-.rockThumb {
-  width: 35%;
-  height: 15%;
-  top: 40%;
-  right: 14%;
-  z-index: 2;
-}
-
-.rockPalm {
-  width: 73.5%;
-  height: 50%;
-  top: 25%;
-  left: 10%;
-  border-radius: 0% 0% 10% 10%;
-  z-index: 1;
-}
-
-.paper {
-  background-color: var(--paper);
-  position: absolute;
-  border-style: solid;
-}
-
-.paperPinkyFinger {
-  width: 10%;
-  height: 20%;
-  left: 15%;
-  top: 23.4%;
-}
-
-.paperRingFinger {
-  width: 10%;
-  height: 25%;
-  left: 30%;
-  top: 18%;
-}
-
-.paperMiddleFinger {
-  width: 10%;
-  height: 30%;
-  left: 45%;
-  top: 13.4%;
-}
-
-.paperPointerFinger {
-  width: 10%;
-  height: 25%;
-  left: 60%;
-  top: 18.4%;
-}
-
-.paperPalm {
-  width: 55%;
-  height: 30%;
-  left: 15%;
-  top: 48%;
-  border-radius: 0% 0% 10% 10%;
-}
-
-.paperThumb {
-  width: 10%;
-  height: 20%;
-  right: 14%;
-  top: 50%;
-  border-radius: 0% 0% 60% 0%;
-}
-
-.scissors {
-  position: absolute;
-  background-color: var(--scissors);
-  border-style: solid;
-  borderwidth: 3%;
-}
-
-.scissorsPinkyFinger{
-  width: 10%;
-  height: 20%;
-  top: 40%;
-  left: 20%;
-  z-index: 2;
-}
-
-.scissorsRingFinger{
-  width: 10%;
-  height: 25%;
-  top: 35%;
-  left: 34%;
-  z-index: 2;
-}
-
-.scissorsThumb{
-  width: 20%;
-  height: 10%;
-  bottom: 30%;
-  right: 30%;
-  z-index: 2;
-}
-
-.scissorsMiddleFinger{
-  width: 10%;
-  height: 35%;
-  right: 39.5%;
-  top: 19%;
-  z-index: 2;
-}
-
-.scissorsPointerFinger{
-  width: 10%;
-  height: 30%;
-  right: 22%;
-  top: 24%;
-  transform: rotate(15deg);
-  z-index: 2;
-}
-
-.scissorsPalm{
-  width: 45%;
-  height: 20%;
-  bottom: 14%;
-  left: 20%;
-  border-radius: 0% 0% 10% 10%;
-  z-index: 1;
+#filler{
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
 }
 
 .button {
-  position: absolute;
-  bottom: 10%;
+  position: relative;
+  left: 47%;
   height: 60px;
   width: 120px;
   border: solid 6px white;
@@ -206,4 +79,27 @@ h1{
   color: White;
   font-family: impact;
   font-size: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.tickdown{
+  animation: countdown 5s linear;
+}
+
+@keyframes countdown{
+  from{
+    transform: translateX(0%);
+    background-color: lightgreen;
+  }
+  50%{
+    transform: translateX(-50%);
+    background-color: yellow;
+  }
+  to{
+    transform: translateX(-100%);
+    background-color: red;
+  }
 }
