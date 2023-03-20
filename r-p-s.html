@@ -11,16 +11,26 @@
 <body>
 <h1 id="pageTitle">Rock - Paper - Scissors!</h1>
 
-<div class="container">
-<div class="box" id="rock">
-</div>
+ <div class="container">
+   <div class="box" id="box">
+     <div class="option" id="rock" style="display: none">
+       ✊
+     </div>
+     <div class="option" id="scissors" style="display: none">
+       ✌️
+     </div>
+     <div class="option" id="paper" style="display: none">
+       ✋
+     </div>
+   </div>
 
- <div class="rpsBox"></div>
- <span></span>
-  
-<button class="button" id="Shoot" onclick="shoot()" >RPS Shoot!</button>
-</div>
-  <script src="script.js"></script>
-</body>
+ </div>
+ <button class="button" id="Shoot" onclick="shoot()">RPS Shoot!</button>
+ <div id="progressBar">
+   <div id="filler">
+     
+   </div>
+ </div>
+  </body>
 
 </html>
